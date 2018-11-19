@@ -7,9 +7,41 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola</h1>
+      <h1></h1>
     </div>
-    <script src="cipher.js"></script>
+
+    <section id = "intro">
+      <h1>Cifrado Cesar</h1>
+      <p>Quieres poder hablar con tus amigos durante tus horas de trabajo o delante de tu jefe!!</p>
+      <ul>
+        <li>Escribe tu mensaje y elige una clave de desplazamiento</li>
+        <li>Elige si quieres cifrar tu mensaje o descifrar el de un amigo</li>
+        <li>Y listo!! el resultado de tu mensaje asi de facil!</li>
+      </ul>
+      
+      <button type="submit" id="begin">empezar</button>
+
+    </section>
+
+    <section id = "principal">
+      <form class="intro">
+        <label for="naming">Ingresa tu mensaje:</label>
+        <input type="text" id="naming">
+
+        <label for="key">Clave de desplazamiento</label>
+        <input type="text" id="key">
+        <br><br>
+        <p>Selecciona una opcion:</p>
+        <button type="button" name="button" id="cyphing">Cifrar mensaje</button>
+        <button type="button" name="button" id="decyphing">Descifrar mensaje</button>
+      </form>
+
+      <p>Resultado</p>
+
+      <div id="result"></div>
+
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>
