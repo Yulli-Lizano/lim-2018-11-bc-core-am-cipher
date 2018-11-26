@@ -1,16 +1,13 @@
-@viewport;
-
 body {
   text-align: center;
   background-image: url(https://www.freepik.es/fotos-vectores-gratis/fondo);
-  background-size: cover;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #33B2FF;
   font-size: 250%;
-  margin-top: 75px;
+  margin-top: 40px;
   font-weight: bold;
 }
 
@@ -28,6 +25,18 @@ h1 {
 
 input {
   padding: 7px;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#userText, #key {
+  margin-top: 1%;
+}
+
+.finalResult {
+  margin-bottom: 1%;
 }
 
 #ciphering, #deciphering {
@@ -38,6 +47,14 @@ input {
   border-radius: 15px;
   box-shadow: 0 9px #929289;
   background-color: #E8E854;
+}
+
+#ciphering {
+  margin-right: .6%;
+}
+
+#deciphering {
+  margin-left: .6%;
 }
 
 #ciphering:active {
