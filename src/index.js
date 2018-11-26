@@ -1,18 +1,19 @@
-const cifrar = document.getElementById("cyphing");
+const cifrar = document.getElementById("ciphering");
 
-function newMessage(texto, number){
-  let myString = "";
-  for (let i = 0; i < texto.length; i++) {
-    let myString2 = (texto.charCodeAt(i)-65+number)%26+65;
-    let myString3 = String.fromCharCode(myString2);
-    myString += myString3;
-  }
+const textInCode = () =>{
+  const message = document.getElementById("userText").value;
+  const number = parseInt(document.getElementById("key").value);
+  const resultado = cipher.encode(number, message);
+  document.getElementById("result").value = resultado;
 }
+cifrar.addEventListener("click", textInCode)
 
-const change = () =>{
-  const button1 = document.getElementById("naming").value;
-  const button2 = parseInt(document.getElementById("key").value);
-  const resultado = newMessage(button1, button2);
-  document.getElementById("result").innerHTML = resultado;
+const descifrar = document.getElementById("deciphering");
+
+const codeInText = () =>{
+  const message = document.getElementById("userText").value;
+  const number = parseInt(document.getElementById("key").value);
+  const initialLetter = cipher.decode(number, message);
+  document.getElementById("result").value = initialLetter;
 }
-cifrar.addEventListener("click", change);
+descifrar.addEventListener("click", codeInText);

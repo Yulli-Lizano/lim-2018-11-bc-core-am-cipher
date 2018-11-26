@@ -4,44 +4,43 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Oswald|PT+Serif" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
   </head>
   <body>
-    <div id="root">
-      <h1></h1>
-    </div>
+    <header>
+      <h1 class="titulo">Working cipher</h1>
+      <p class="intro">Quieres poder hablar con tus amigos durante tus horas de trabajo o delante de tu jefe!!</p>
+    </header>
 
-    <section id = "intro">
-      <h1>Cifrado Cesar</h1>
-      <p>Quieres poder hablar con tus amigos durante tus horas de trabajo o delante de tu jefe!!</p>
-      <ul>
-        <li>Escribe tu mensaje y elige una clave de desplazamiento</li>
-        <li>Elige si quieres cifrar tu mensaje o descifrar el de un amigo</li>
-        <li>Y listo!! el resultado de tu mensaje asi de facil!</li>
-      </ul>
+    <main>
+      <form>
+        <fieldset class="data">
+          <label for="naming">Ingresa tu mensaje:</label>
+          <input type="text" value="" id="userText">
+        </fieldset>
 
-      <button type="submit" id="begin">empezar</button>
+        <fieldset class="data">
+          <label for=""key"">clave de desplazamiento:</label>
+          <input type="number" value="" id="key">
+        </fieldset>
 
-    </section>
+        <fieldset class="option">
+          <P class="select">Selecciona una opcion:</P>
+          <button type="button" id="ciphering">CIFRAR</button>
+          <button type="button" id="deciphering">DESCIFRAR</button>
+        </fieldset>
 
-    <section id = "principal">
-      <form class="intro">
-        <label for="naming">Ingresa tu mensaje:</label>
-        <input type="text" id="naming">
+        <fieldset class="finalMessage">
+          <P class="finalResult">Resultado:</P>
+          <input type="text" id="result">
+        </fieldset>
 
-        <label for="key">Clave de desplazamiento</label>
-        <input type="text" id="key">
-        <br><br>
-        <p>Selecciona una opcion:</p>
-        <button type="button" name="button" id="cyphing">Cifrar mensaje</button>
-        <button type="button" name="button" id="decyphing">Descifrar mensaje</button>
       </form>
 
-      <p>Resultado</p>
+    </main>
 
-      <div id="result"></div>
-
-    </section>
-
+    <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,65 @@
+@viewport;
+
+body {
+  text-align: center;
+  background-image: url(https://www.freepik.es/fotos-vectores-gratis/fondo);
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #33B2FF;
+  font-size: 250%;
+  margin-top: 75px;
+  font-weight: bold;
+}
+
+.intro {
+  font-family: 'PT Serif', serif;
+  font-size: 125%;
+  color: #223491;
+}
+
+.data, .select, .finalMessage {
+  font-family: 'PT Serif', serif;
+  font-size: 110%;
+  color: #223491;
+}
+
+input {
+  padding: 7px;
+}
+
+#ciphering, #deciphering {
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #929289;
+  background-color: #E8E854;
+}
+
+#ciphering:active {
+  background-color: #030308;
+  color: #F7F9F9;
+}
+
+#deciphering:active {
+  background-color: #030308;
+  color: #F7F9F9;
+}
+
+.name {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.number,option,p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+fieldset {
+  border-style: none;
+}
