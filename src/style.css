@@ -1,11 +1,12 @@
 body {
   text-align: center;
-  background-image: url(https://www.freepik.es/fotos-vectores-gratis/fondo);
+  background-image: url(img/fondos.jpg);
+  background-size: cover;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #33B2FF;
+  color: #1340B9;
   font-size: 250%;
   margin-top: 40px;
   font-weight: bold;
@@ -14,13 +15,13 @@ h1 {
 .intro {
   font-family: 'PT Serif', serif;
   font-size: 125%;
-  color: #223491;
+  color: #122863;
 }
 
 .data, .select, .finalMessage {
   font-family: 'PT Serif', serif;
   font-size: 110%;
-  color: #223491;
+  color: #122863;
 }
 
 input {
