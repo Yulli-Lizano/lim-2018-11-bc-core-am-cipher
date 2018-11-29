@@ -6,28 +6,39 @@ body {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #1340B9;
-  font-size: 250%;
-  margin-top: 40px;
-  font-weight: bold;
+  color: #fff;
+  font-size: 240%;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+  margin-top: 2.5%;
+  background-color: #1340B9;
 }
 
 .intro {
   font-family: 'PT Serif', serif;
   font-size: 125%;
-  color: #122863;
+  color: #1340B9;
+  font-weight: bold;
 }
 
 .data, .select, .finalMessage {
   font-family: 'PT Serif', serif;
   font-size: 110%;
-  color: #122863;
+  color: #1340B9;
+  font-weight: bold;
+}
+
+.select {
+  margin-top: 0.4%
 }
 
 input {
-  padding: 7px;
+  padding: 1%;
   display: block;
-  width: 60%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,19 +54,19 @@ input {
 #ciphering, #deciphering {
   font-family: 'Arimo', sans-serif;
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 1.2% 1.3%;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #929289;
-  background-color: #E8E854;
+  box-shadow: 0 9px #8F8F8D;
+  background-color: #F6E51B;
 }
 
 #ciphering {
-  margin-right: .6%;
+  margin-right: 0.6%;
 }
 
 #deciphering {
-  margin-left: .6%;
+  margin-left: 0.6%;
 }
 
 #ciphering:active {
@@ -66,16 +77,6 @@ input {
 #deciphering:active {
   background-color: #030308;
   color: #F7F9F9;
-}
-
-.name {
-  margin-top: 40px;
-  margin-bottom: 25px;
-}
-
-.number,option,p {
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 fieldset {

@@ -4,24 +4,24 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Oswald|PT+Serif" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Arimo,Oswald,PT+Serif" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   </head>
   <body>
     <header>
-      <h1 class="titulo">Healthy cipher</h1>
-      <p class="intro">Quieres poder recibir tus resultados médicos de manera secreta o enviarlos a tus pacientes!!</p>
+      <h1>Healthy cipher</h1>
+      <p class="intro">Recibe tus resultados médicos o envíalos a tus pacientes en mensajes secretos!!</p>
     </header>
 
     <main>
       <form>
         <fieldset class="data">
-          <label for="naming">Ingresa tu mensaje:</label>
+          <label for="userText">Ingresa tu mensaje:</label>
           <input type="text" value="" id="userText">
         </fieldset>
 
         <fieldset class="data">
-          <label for="key">clave de desplazamiento:</label>
+          <label for="key">Ingresa un número que se usará como tu clave secreta para cifrar o descifrar:</label>
           <input type="number" value="" id="key">
         </fieldset>
 
@@ -42,5 +42,6 @@
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
